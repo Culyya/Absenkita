@@ -76,9 +76,6 @@ export default {
   },
   mounted() {
     this.userId = localStorage.getItem('id')
-    if (!this.userId) {
-      this.$router.push('/404');
-    }
    },
 }
 </script>
