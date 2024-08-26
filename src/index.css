@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+@keyframes muncul-kiri-kanan-fade {
+    /* Pada awal animasi, elemen berada di posisi awal (di luar layar) dan tidak terlihat */
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    /* Pada 50% animasi, elemen mulai terlihat */
+    50% {
+      opacity: 0;
+    }
+    /* Pada akhir animasi, elemen berada di posisi akhir (di tengah layar) */
+    100% {
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
